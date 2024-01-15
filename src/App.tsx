@@ -3,15 +3,16 @@ import './app.scss'
 import { Navbar } from './components/navbar/Navbar'
 
 function App() {
+
   return (
     <div>
-      <section><Navbar/></section>
-      <section>experince</section>
-      <section>education</section>
-      <section>projects</section>
-      <section>skills</section>
-      <section>hobies</section>
-      <section>contact me</section>
+      <section id='Home'><Navbar/></section>
+      <section id='Experince'>experince</section>
+      <section id='Education'>education</section>
+      <section id='Projects'>projects</section>
+      <section id='Skills'>skills</section>
+      <section id='Hobbie'>hobies</section>
+      <section id='Contact'>contact me</section>
     </div>
   )
 }
