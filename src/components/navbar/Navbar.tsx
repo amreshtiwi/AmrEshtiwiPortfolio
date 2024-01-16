@@ -14,6 +14,8 @@ export const Navbar = () => {
                 transition={{ duration: 0.5 }}>Amr Eshtiwi</motion.span>
                 <div className="social">
                     <a href="https://www.linkedin.com/in/amr-eshtiwi/" target='_blank'><img src="/linkedIn.png" alt="linkedIn" /></a>
+                    <a href="https://www.linkedin.com/in/amr-eshtiwi/" target='_blank'><img src="/github.png" alt="linkedIn" /></a>
+
                 </div>
             </div>
         </div>
