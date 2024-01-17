@@ -2,6 +2,7 @@
 import './app.scss'
 import { Home } from './components/home/Home'
 import { Navbar } from './components/navbar/Navbar'
+import { Parallax } from './components/parallax/Parallax'
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
         <Navbar/>
         <Home/>
         </section>
-      <section id='Experince'>experince</section>
+      <section id='Experince'><Parallax/></section>
       <section id='Education'>education</section>
       <section id='Projects'>projects</section>
       <section id='Skills'>skills</section>
