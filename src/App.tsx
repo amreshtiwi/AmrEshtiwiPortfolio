@@ -6,6 +6,7 @@ import { Navbar } from './components/navbar/Navbar'
 import { Parallax } from './components/parallax/Parallax'
 import { Summary } from './components/summary/Summary'
 import { Education } from './components/education/Education'
+import { ProjectsAndSkills } from './components/projectsAndSkills/ProjectsAndSkills'
 
 function App() {
 
@@ -19,7 +20,7 @@ function App() {
       <section id='Education'><Summary /></section>
       <section id='Projects'><Experince/></section>
       <section id='Skills'><Education/></section>
-      <section id='Hobbie'>hobies</section>
+      <section id='Hobbie'><ProjectsAndSkills/></section>
       <section id='Contact'>contact me</section>
     </div>
   )
