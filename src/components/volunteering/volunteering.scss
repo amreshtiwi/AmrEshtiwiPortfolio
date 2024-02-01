@@ -1,0 +1,32 @@
+.volunteering-container {
+
+    padding-top: 20px;
+
+    .rectangle {
+        background-color: #DEAF1E;
+        width: 25%;
+        height: 50px;
+        border-radius: 10px;
+        position: relative;
+        margin-bottom: 50px;
+        margin-inline: auto;
+
+        h1 {
+            position: absolute;
+            bottom: -35px;
+            font-size: 36px;
+            padding: 10px;
+        }
+    }
+
+
+    .Volunteering {
+        padding-top: 50px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        // gap: 50px;
+    }
+
+}
