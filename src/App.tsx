@@ -8,6 +8,7 @@ import { Summary } from './components/summary/Summary'
 import { Education } from './components/education/Education'
 import { ProjectsAndSkills } from './components/projectsAndSkills/ProjectsAndSkills'
 import { Volunteering } from './components/volunteering/Volunteering'
+import { CourseAndWorkshops } from './components/coursesAndWorkShops/CourseAndWorkshops'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
       <section id='Skills'><Education/></section>
       <section id='Hobbie'><ProjectsAndSkills/></section>
       <section id='Volunteering'><Volunteering/></section>
+      <section id='Volunteering'><CourseAndWorkshops/></section>
       <section id='Contact'>contact me</section>
     </div>
   )
