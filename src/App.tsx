@@ -9,6 +9,7 @@ import { Education } from './components/education/Education'
 import { ProjectsAndSkills } from './components/projectsAndSkills/ProjectsAndSkills'
 import { Volunteering } from './components/volunteering/Volunteering'
 import { CourseAndWorkshops } from './components/coursesAndWorkShops/CourseAndWorkshops'
+import { Contact } from './components/contact/Contact'
 
 function App() {
 
@@ -18,14 +19,14 @@ function App() {
         <Navbar />
         <Home />
       </section>
-      <section id='Experince'><Parallax /></section>
-      <section id='Education'><Summary /></section>
-      <section id='Projects'><Experince/></section>
-      <section id='Skills'><Education/></section>
-      <section id='Hobbie'><ProjectsAndSkills/></section>
+      <section id='parallax'><Parallax /></section>
+      <section id='Summary'><Summary /></section>
+      <section id='Experience'><Experince/></section>
+      {/* <section id='Skills'><Education/></section> */}
+      <section id='Projects'><ProjectsAndSkills/></section>
       <section id='Volunteering'><Volunteering/></section>
-      <section id='Volunteering'><CourseAndWorkshops/></section>
-      <section id='Contact'>contact me</section>
+      <section id='Courses'><CourseAndWorkshops/></section>
+      <section id='Contact'><Contact/></section>
     </div>
   )
 }

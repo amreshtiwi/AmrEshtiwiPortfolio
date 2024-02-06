@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .navbar{
     height: 100px;
 
@@ -8,9 +10,20 @@
         align-items: center;
         justify-content: space-between;
         height: 100px;
+        padding-inline: 100px;
+
+        @include mobile{
+            justify-content: flex-end;
+            padding: 20px;
+        }
 
         .logo{
-            font-weight: bold;
+            font-weight: bold; 
+            font-size: 26px;
+
+            @include mobile{
+                display: none;
+            }
         }
 
         .social{

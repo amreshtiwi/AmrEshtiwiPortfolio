@@ -1,3 +1,5 @@
+@import '../../app.scss';
+
 .parallax{
     width: 100%;
     height: 100%;
@@ -10,6 +12,12 @@
 
     h1{
         font-size: 100px;
+        z-index: 3;
+
+        @include mobile{
+            font-size: 72px;
+            text-align: center;
+        }
     }
 
     .mountain{
@@ -21,25 +29,42 @@
         position: absolute;
         bottom: -280px;
         z-index: 3;
+
+        @include mobile{
+            background-size: contain;
+            background-repeat: no-repeat;
+            bottom: unset;
+        }
     }
 
     .birds{
         background-image: url('/birds.png');
         background-size: cover;
-        background-position: bottom;
+        background-position: 60%;
         width: 100%;
         height: 100%;
         position: absolute;
         bottom: -280px;
         z-index: 2;
+
+        @include mobile{
+            background-size: contain;
+            background-repeat: no-repeat;
+            bottom: unset;
+        }
     }
     .sun{
         background-image: url('/sun.png');
         background-size: cover;
-        background-position: bottom;
+        background-position: top;
         width: 100%;
         height: 100%;
         position: absolute;
-        z-index: 1;       
+        z-index: 1;  
+        @include mobile{
+            background-size: contain;
+            background-repeat: no-repeat;
+            // bottom: unset;
+        }     
     }
 }

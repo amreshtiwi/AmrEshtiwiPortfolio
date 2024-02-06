@@ -1,6 +1,12 @@
+@import '../../app.scss';
 .courses-container {
 
     padding-top: 20px;
+    margin-bottom: 100px;
+
+    @include mobile{
+        padding-top: 50px;
+    }
 
     .rectangle {
         background-color: #DEAF1E;
@@ -10,6 +16,10 @@
         position: relative;
         margin-bottom: 50px;
         margin-inline: auto;
+
+        @include mobile{
+            width: 70%;
+        }
 
         h1 {
             position: absolute;
@@ -28,6 +38,11 @@
         align-items: center;
         justify-content: space-around;
         // gap: 50px;
+
+        @include mobile{
+            flex-direction: column;
+            padding-top: 10px;
+        }
     }
 
 }
