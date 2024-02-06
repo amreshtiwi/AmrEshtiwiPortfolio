@@ -51,8 +51,8 @@ export const Home = () => {
                     <motion.h2 variants={textVariants}>AMR ESHTIWI</motion.h2>
                     <motion.h1 variants={textVariants}>Frontend Developer and Designer</motion.h1>
                     <motion.div className="buttons" variants={textVariants}>
-                        <motion.button variants={textVariants}>See Latest Projects</motion.button>
-                        <motion.button variants={textVariants}>Contact Me</motion.button>
+                        <motion.a className='button' href='#Projects'  variants={textVariants}>See Latest Projects</motion.a>
+                        <motion.a className='button' href='#Contact' variants={textVariants}>Contact Me</motion.a>
                     </motion.div>
                     <motion.img src="arrow.png" alt="arrow" variants={textVariants} animate="scrollButton"/>
                 </motion.div>

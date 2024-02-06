@@ -1,6 +1,10 @@
+@import '../../app.scss';
+
 .volunteering-container {
 
     padding-top: 20px;
+
+    margin-bottom: 90px;
 
     .rectangle {
         background-color: #DEAF1E;
@@ -11,11 +15,20 @@
         margin-bottom: 50px;
         margin-inline: auto;
 
+        @include mobile{
+            padding-top: 50px;
+            width:70%
+        }
+
         h1 {
             position: absolute;
             bottom: -35px;
             font-size: 36px;
             padding: 10px;
+
+            @include mobile{
+                font-size: 30px;
+            }
         }
     }
 
@@ -26,6 +39,10 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
+
+        @include mobile{
+            flex-direction: column;
+        }
         // gap: 50px;
     }
 

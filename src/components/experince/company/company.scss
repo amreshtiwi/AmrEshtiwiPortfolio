@@ -1,14 +1,19 @@
+@import '../../../app.scss';
+
 .company-container {
     position: relative;
     height: 100%;
-    padding-top: 100px;
+    padding-top: 50px;
+
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        padding-top: 25px;
+    }
     .company {
         position: absolute; 
-        // top: 0;
-        // bottom: 90px;
         right: 180px;
-        top: 340px;
-        // left: 500px;
+        top: 290px;
         width: 300px;
         border: 3px solid #DEAF1E;
         border-radius: 10px;
@@ -20,16 +25,30 @@
         color: #c4c4c4;
         box-shadow: 1px 1px 3px #858585;
 
+        @include tablet{
+            width: 270px;
+            top:210px;
+            right: 100px;
+        }
+        
+        @include mobile{
+            position: static;
+            width: 100%;
+        }
+
+
 
         h1 {
             width: 100%;
             font-size: 20px;
-            // background-color: #DEAF1E;
             padding: 10px;
+
+            @include tablet{
+                font-size: 16px;
+            }
         }
 
         span {
-            // background-color: #858585;
             width: 100%;
             padding-block: 10px;
             display: flex;
@@ -38,6 +57,10 @@
 
             h2 {
                 font-size: 18px;
+
+                @include tablet{
+                    font-size: 16px;
+                }
             }
 
             p {
@@ -50,7 +73,6 @@
 
 
         a {
-            // width: 30px;
             background-color: #DEAF1E;
             color: #1B3C3E;
             padding: 10px;
@@ -62,23 +84,31 @@
     }
 
     img{
-
-        // position: absolute;
-
-        top: 80px;
-        
+        // top: 50px;
         z-index: -1;
-        // left: 0;
         width: 600px;
         border-radius: 10px;
         box-shadow: 2px 2px 4px #858585;
         border: 3px solid #DEAF1E;
+
+        @include mobile{
+            display: none;
+        }
+
+        @include tablet{
+            width: 400px;
+        }
     }
 
     ul {
         margin-top: 10px;
         width: 60%;
         padding: 0 10px 10px 20px;
+
+        @include mobile{
+            width: 100%;
+        }
+
 
         li {
             font-size: 13px;
