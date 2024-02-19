@@ -13,7 +13,7 @@ export const CourseAndWorkshops = () => {
                 <Course
                     title={'Django workshop'}
                     info={'4 days of intensive practical training that gives the fundamentals of the Django framework, by building a project to learn about Django and the folder structure and implement the first project, in addition to create a database and learn how to store an image.'}
-                    imgUri='dj.svg'
+                    imgUri='django1.jpg'
                 />
 
                 <Course
